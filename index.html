@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="title" style="color: #8A2BE2;">Encuesta de Satisfacción</h1>
+        <p id="description">Por favor, complete este formulario para ayudarnos a mejorar nuestro servicio.</p>
+    </header>
+
+    <form id="survey-form" action="#" method="POST">
+        
+        <!-- Nombre -->
+        <div class="form-group">
+            <label id="name-label" for="name">Nombre:</label>
+            <input id="name" type="text" name="name" placeholder="Escribe tu nombre" required>
+        </div>
+        
+        <!-- Correo Electrónico -->
+        <div class="form-group">
+            <label id="email-label" for="email">Correo Electrónico:</label>
+            <input id="email" type="email" name="email" placeholder="nombre@dominio.com" required>
+        </div>
+        
+        <!-- Número -->
+        <div class="form-group">
+            <label id="number-label" for="number">Edad:</label>
+            <input id="number" type="number" name="age" placeholder="Edad" min="18" max="100" required>
+        </div>
+
+        <!-- Desplegable -->
+        <div class="form-group">
+            <label for="dropdown">Elige tu ciudad:</label>
+            <select id="dropdown" name="city" required>
+                <option value="ciudad1">Ciudad 1</option>
+                <option value="ciudad2">Ciudad 2</option>
+                <option value="ciudad3">Ciudad 3</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="form-group">
+            <label>¿Te gustaría recibir información sobre nuestras novedades?</label>
+            <input type="radio" id="yes" name="newsletter" value="yes">
+            <label for="yes">Sí</label>
+            <input type="radio" id="no" name="newsletter" value="no">
+            <label for="no">No</label>
+        </div>
+
+        <!-- Casillas de verificación -->
+        <div class="form-group">
+            <label>¿Qué servicios utilizas habitualmente?</label>
+            <input type="checkbox" id="service1" name="services" value="Servicio 1">
+            <label for="service1">Servicio 1</label>
+            <input type="checkbox" id="service2" name="services" value="Servicio 2">
+            <label for="service2">Servicio 2</label>
+            <input type="checkbox" id="service3" name="services" value="Servicio 3">
+            <label for="service3">Servicio 3</label>
+        </div>
+
+        <!-- Comentarios -->
+        <div class="form-group">
+            <label for="comments">Comentarios adicionales:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Escribe aquí tus comentarios..."></textarea>
+        </div>
+
+        <!-- Botón de Enviar -->
+        <button id="submit" type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
